@@ -1,11 +1,12 @@
 .btn {
-  @apply hover:underline mb-5;
+  @apply mb-5 hover:underline;
 }
 .header {
   @apply text-center flex items-center justify-center mb-5;
 }
 .img {
-  @apply w-[96px] h-[96px];
+  width: 96px;
+  height: 96px;
 }
 .title {
   @apply text-3xl font-bold first-letter:uppercase;
