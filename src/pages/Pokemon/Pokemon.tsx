@@ -14,8 +14,6 @@ const Pokemon = () => {
     (state) => state.pokemon
   );
 
-  console.log("pokemon:", pokemon);
-
   useEffect(() => {
     if (slug) {
       dispatch(fetchPokemon(slug));

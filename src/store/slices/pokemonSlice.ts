@@ -14,7 +14,6 @@ export const fetchPokemon = createAsyncThunk<
 
   try {
     const response = await axios.get<Pokemon>(`${POKEMON_URL}/${slug}`);
-    console.log("response:", response);
 
     if (!response.data) {
       throw new Error();
@@ -25,6 +24,7 @@ export const fetchPokemon = createAsyncThunk<
     return rejectWithValue("Something went wrong");
   }
 });
+
 export const fetchPokemonList = createAsyncThunk<
   PokemonList,
   { limit: number; page: number },
