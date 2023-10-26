@@ -40,8 +40,6 @@ const Pokemon = () => {
 
       <div className={styles.header}>
         <PokemonCard item={pokemon} />
-        {/* <img className={styles.img} src={pokemon.img} alt="" />
-        <h1 className={styles.title}>{pokemon.name}</h1> */}
       </div>
 
       <div className="mb-5">
