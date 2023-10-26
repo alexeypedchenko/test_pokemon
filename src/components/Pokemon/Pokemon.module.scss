@@ -1,0 +1,18 @@
+.item {
+  @apply flex flex-col cursor-pointer;
+}
+.item:hover img {
+  transform: scale(1.05);
+}
+.img {
+  @apply w-full h-auto mb-2 bg-gray-100 rounded transition;
+}
+.name {
+  @apply text-xl font-bold mb-2 first-letter:uppercase;
+}
+.types {
+  @apply flex gap-1;
+}
+.type {
+  @apply text-sm px-4 py-1 rounded-xl border border-gray-100 first-letter:uppercase;
+}

@@ -1,0 +1,9 @@
+.wrap {
+  @apply m-10 flex flex-col justify-center items-center gap-10;
+}
+.title {
+  @apply text-3xl;
+}
+.link {
+  @apply underline hover:no-underline;
+}
